@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Información sobre el producto </h1>
+    <form>
+        <fieldset>
+            <legend> Datos Básicos </legend>
+            <label for="nombre"> Nombre </label>
+            <br>
+            <input type="text" name="Nombre" id="nombre">
+            <br>
+            <label for="desc"> Descripción </label>
+            <br>
+            <textarea id="desc" name="Descripción" cols="100" rows="20"></textarea>
+            <br>
+            <label for="foto"> Foto </label>
+            <input type="file" name="Foto" id="foto">
+            <br>
+            <input type="checkbox" name="Contador" id="contador">
+            <label for="Contador"> Añadir contador de visitas </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend> Datos Económicos </legend>
+            <label for="precio"> Precio </label>
+            <input type="text" name="precio" id="precio"> € 
+            <label for="impuestos"> Impuestos </label>
+            <select name="impuestos" id="impuestos">
+                <option value="4"> 4% </option>
+                <option value="7"> 7% </option>
+                <option value="18"> 18% </option>
+                <option value="21"> 21% </option>
+            </select>
+            <br>
+            <label for="promoción"> Promoción </label>
+            <br>
+            <input type="radio" name="promoción" id="Ninguna">
+            <label for="Ninguna"> Ninguna </label> 
+            <br>
+            <input type="radio" name="promoción" id="Transporte gratis">
+            <label for="Transporte gratis"> Transporte gratis </label> 
+            <br>
+            <input type="radio" name="promoción" id="descuento">
+            <label for=" Descuento"> Descuento 5% </label>
+        </fieldset>
+        <input type="submit" value="Enviar"> 
+    </form>
+</body>
+</html>
